@@ -1,4 +1,4 @@
-// Can you explain what is being imported here?
+
 import { getPosts } from "./data/DataManager.js";
 import { PostList } from "./feed/PostList.js"
 
