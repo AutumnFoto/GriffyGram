@@ -1,4 +1,4 @@
-#GriffyGram
+# GriffyGram
 
 ## An application created in the NSS C47 daytime class, praticing skills with : 
 
