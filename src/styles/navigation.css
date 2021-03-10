@@ -27,8 +27,8 @@
     padding-top: 0.1rem;
 }
 
-.navigation__icon > img {
-    height: 2rem;
+.navigation_icon > img {
+    height: 3rem;
 }
 
 
@@ -41,7 +41,7 @@
 }
 
 .navigation__message > img {
-    height: 2rem;
+    height: 3rem;
 }
 
 .notification__count{
@@ -67,3 +67,4 @@
 #directMessageIcon {
     cursor: pointer;
 }
+
