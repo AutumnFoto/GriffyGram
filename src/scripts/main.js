@@ -4,6 +4,8 @@ import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./nav/NavBar.js"
 import { Footer } from "./nav/Footer.js"
 
+
+
 const applicationElement = document.querySelector(".giffygram");
 const footerElement = document.querySelector("footer");
 
@@ -30,6 +32,7 @@ applicationElement.addEventListener("change", event => {
 	}
   })
 
+
 const showPostList = () => {
 	const postElement = document.querySelector(".postList");
 	getPosts().then((allPosts) => {
@@ -48,15 +51,11 @@ const showFooter = () => {
 	footerElement.innerHTML = Footer();
 }
 
-/*
-	This function performs one, specific task.
-	1. Can you explain what that task is?
-	2. Are you defining the function here or invoking it?
-*/
 const startGiffyGram = () => {
 	showNavBar();
 	showPostList();
 	showFooter();
+
 }
-// Are you defining the function here or invoking it?
+
 startGiffyGram();
