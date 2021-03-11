@@ -24,6 +24,7 @@ export const getPosts = () => {
     // })
 }
 
+
 // Key Term: The userId property on the post object is a foreign key. It matches the primary key of 1 of the user who created the post. In relational data systems, it is how you connect two related things together. In this example, it's your way of saying "This post object belongs to user #1."
 
 // The export keyword makes the function usable by other modules. If you do not put the export keyword before declaring the function, then this module is the only one that can invoke it.
