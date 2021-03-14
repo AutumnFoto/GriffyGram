@@ -69,6 +69,21 @@ applicationElement.addEventListener("change", event => {
 	  }
   })
 
+  const showFilteredPosts = (year) => {
+	//get a copy of the post collection
+	const epoch = Date.parse(`01/01/${year}`);
+	//filter the data
+	const filteredData = usePostCollection().filter(singlePost => {
+	  if (singlePost.timestamp >= epoch) {
+		return singlePost
+	  }
+	})
+	const postElement = document.querySelector(".postList");
+	postElement.innerHTML = PostList(filteredData);
+  }
+
+
+
 const showPostList = () => {
 	const postElement = document.querySelector(".postList");
 	getPosts().then((allPosts) => {
@@ -87,12 +102,18 @@ const showFooter = () => {
 	footerElement.innerHTML = Footer();
 }
 
+const showPostEntry = () => { 
+	//Get a reference to the location on the DOM where the nav will display
+	const entryElement = document.querySelector(".entryForm");
+	entryElement.innerHTML = PostEntry();
+  }
+
 
 const startGiffyGram = () => {
 	showNavBar();
+	showPostEntry()
 	showPostList();
 	showFooter();
-
 }
 
 startGiffyGram();
