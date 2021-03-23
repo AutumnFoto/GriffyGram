@@ -14,5 +14,5 @@ export const NavBar = () => {
     <button id="logout" class="fakeLink">Logout</button>
 </div>
 </nav>
-    `;
+    `
 };
